@@ -1,0 +1,739 @@
+/* user_purchase_details.css */
+
+/* Reset default styles */
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+
+
+
+
+/* Center the container vertically and horizontally */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust for different screen sizes */
+    gap: 20px; /* Add gap between grid items */
+    max-width: 1200px; /* Adjusted max-width */
+    margin: auto; /* Center the container */
+}
+
+/* Heading styles */
+h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading text */
+}
+
+/* Card container */
+.purchase-details-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split into two columns */
+    gap: 20px; /* Add some space between the columns */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* Event flyer image */
+#eventFlyerImg {
+    width: 100%; /* Make the image responsive */
+    max-height: 1000px; /* Set maximum height */
+    border-radius: 10px; /* Add border radius */
+}
+
+/* QR code container */
+#qrCodeContainer {
+    text-align: center; /* Center the QR code image */
+    grid-template-columns: repeat(3, 1fr);
+  
+}
+
+/* Payment details container */
+.payment-details {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Arrange in rows */
+    gap: 20px; /* Add gap between grid items */
+}
+
+/* Payment method styles */
+#paymentMethod {
+    text-align: center;
+}
+
+#paymentMethodText {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Payment options container */
+#paymentOptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Arrange buttons in two columns */
+    gap: 20px; /* Add gap between grid items */
+    justify-content: center; /* Center the buttons */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+/* Account details styles */
+#accountDetails {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 280px;
+}
+
+#accountDetails h3 {
+    margin-bottom: 10px;
+}
+
+#accountDetails p {
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+/* Adjust styles for small screens */
+@media screen and (max-width: 600px) {
+    .purchase-details-card {
+        width: 90%; /* Adjusted width for small screens */
+        max-width: none; /* Remove maximum width */
+        padding: 10px; /* Reduced padding */
+        border-radius: 8px; /* Adjusted border radius */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+        position: relative; /* Ensure relative positioning for children */
+    }
+
+      /* Purchase details section */
+      #purchaseDetails {
+        font-size: 14px; /* Adjusted font size */
+        line-height: 1.5; /* Adjusted line height */
+        color: #555; /* Adjusted text color */
+        margin-top: 5px; /* Add margin top for spacing */
+    }
+
+    /* Position flyer image inside the card */
+    #eventFlyer {
+        width: 100%; /* Make flyer image fill the card width */
+        max-height: 200px; /* Limit flyer image height */
+        border-top-left-radius: 8px; /* Adjusted border radius for top corners */
+        border-top-right-radius: 8px;
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    /* Adjust other content to make space for the flyer */
+    #purchaseDetails,
+    #qrCodeContainer,
+    #ticketsContainer {
+        padding-top: 20px; /* Add padding to create space below flyer */
+    }
+
+      /* Display QR code images in a grid format */
+      .qr-code-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+        gap: 10px; /* Add some gap between the grid items */
+    }
+
+    /* Ensure QR code images fill their grid cell */
+    .qr-code-img {
+        width: 100%;
+        height: auto;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    /* Payment details section */
+    .payment-details {
+        margin-top: 20px; /* Add margin top for spacing */
+    }
+
+     /* Account details */
+     #accountDetails {
+        font-size: 14px; /* Adjusted font size */
+        line-height: 1.5; /* Adjusted line height */
+        color: #555; /* Adjusted text color */
+        align-items: center;
+    }
+
+    /* Payment options */
+    #paymentOptions {
+        display: flex;
+        flex-direction: column; /* Display buttons in a column */
+        align-items: center; /* Center buttons horizontally */
+    }
+
+    /* PayPal and Stripe button containers */
+    #paypal-button-container,
+    #stripe-button-container {
+        margin-top: 10px; /* Add margin top for spacing */
+    }
+
+}
+
+
+
+/* Adjust styles for small screens (Android phones) */
+@media screen and (max-width: 400px) {
+    /* Purchase details card */
+    .purchase-details-card {
+        width: 90%; /* Adjusted width for small screens */
+        max-width: none; /* Remove maximum width */
+        padding: 10px; /* Reduced padding */
+        border-radius: 8px; /* Adjusted border radius */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+        position: relative; /* Ensure relative positioning for children */
+    }
+
+    /* Purchase details section */
+    #purchaseDetails {
+        font-size: 14px; /* Adjusted font size */
+        line-height: 1.5; /* Adjusted line height */
+        color: #555; /* Adjusted text color */
+        margin-top: 5px; /* Add margin top for spacing */
+    }
+
+    /* Position flyer image inside the card */
+    #eventFlyer {
+        width: 100%; /* Make flyer image fill the card width */
+        max-height: 200px; /* Limit flyer image height */
+        border-top-left-radius: 8px; /* Adjusted border radius for top corners */
+        border-top-right-radius: 8px;
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    /* Adjust other content to make space for the flyer */
+    #purchaseDetails,
+    #qrCodeContainer,
+    #ticketsContainer {
+        padding-top: 20px; /* Add padding to create space below flyer */
+    }
+
+    /* Display QR code images in a grid format */
+    .qr-code-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+        gap: 10px; /* Add some gap between the grid items */
+    }
+
+    /* Ensure QR code images fill their grid cell */
+    .qr-code-img {
+        width: 100%;
+        height: auto;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Adjust styles for medium screens (iPhones) */
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    /* Add your styles for medium screens here */
+}
+
+/* Adjust styles for large screens (tablets) */
+@media screen and (min-width: 769px) {
+    /* Add your styles for large screens here */
+}
+
+
+
+
+
+
+.email-container {
+    position: fixed; /* Make the container fixed */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove default link underline */
+    z-index: 1000; /* Ensure the icon appears above other content */
+}
+
+.email-button {
+    background-color: #007bff; /* Example background color */
+    color: white; /* Example text color */
+    border: none;
+    border-radius: 50%; /* Make it a circle */
+    width: 50px; /* Adjust button width */
+    height: 50px; /* Adjust button height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.email-text-container {
+    background-color: #007bff; /* Example background color */
+    color: white; /* Example text color */
+    padding: 5px 10px; /* Adjust padding */
+    border-top-right-radius: 10px; /* Adjust border radius */
+    border-bottom-right-radius: 10px; /* Adjust border radius */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 200px;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.footer_1,
+.footer_2,
+.footer_3,
+.footer_4 {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.footer_socials li {
+    margin: 0 5px;
+}
+
+.footer_socials a {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.footer_copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+footer {
+    background: var(--color-bg1);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.footer_container > div h4 {
+    margin-bottom: 1.2rem;
+}
+
+.footer_2 p {
+    margin: 0 0 2rem;
+}
+
+footer ul li {
+    margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer_copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2ren 0;
+    border-top: 1px solid var(--color-bg2);
+}
+
+
+
+
+
+
+/*------media querries for tablet------*/
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+         /*------navbar------*/
+
+    nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: #fff;
+        margin-top: 70px;
+        cursor: pointer;
+    }
+
+    nav button#close-menu-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+        margin-top: 50px;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        height: 5.8rem;
+        animation: animateNavItems 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+    }
+
+    .nav-menu li:nth-child(2) {
+        animation-delay: 200ms;
+    }
+
+    .nav-menu li:nth-child(3) {
+        animation-delay: 400ms;
+    }
+
+    .nav-menu li:nth-child(4) {
+        animation-delay: 600ms;
+    }
+
+   
+
+
+    @keyframes animateNavItems {
+        0% {
+           transform: rotateZ(-90deg);
+        }
+        100% {
+          transform: rotateZ(0);
+          opacity: 1;
+        }
+    }
+
+  
+
+
+
+    /*------header----------------------------------------------------*/
+       header {
+        height: 52vh;
+        margin-bottom: 4rem;
+       }
+
+       .header_container {
+        gap: 0;
+        padding-bottom: 3rem;
+       }
+
+ /*------------------end of header section---------------------------------------*/
+
+/*---------------------category section-------------------------------------*/ 
+
+ .categories {
+    height: auto;
+ }
+
+ .container_categories {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+ }
+
+ .categories_left {
+    margin-right: 0;
+ }
+
+ .categories .btn {
+    margin-bottom: 5rem;
+ }
+/*------------------end of categories---------------------------------------*/
+
+/*------------------popular courses section---------------------------------------*/
+
+.courses {
+    margin-top: 0;
+}
+
+.courses_container {
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+/*------------------end of courses---------------------------------------*/
+
+/*------------------fags question--------------------------------------*/
+
+.faqs_container {
+    grid-template-columns: 1fr;
+}
+
+.faq {
+    padding: 1.5rem;
+}
+/*------------------end faq question--------------------------------------*/
+/*------------------footer section -------------------------------------*/
+
+.footer_container {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+/*-----------------ABOUT PAGE -------------------------------------*/
+.about_achievements {
+    margin-top: 2rem;
+}
+
+.about_achievements-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------media querries for phones------*/
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+        /*------navbar------*/
+
+    .nav-menu {
+        right: 3%;
+
+    }
+ /*------header------*/
+
+ header {
+    height: 100vh;
+    
+ }
+
+ .header_container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: -2rem;
+ }
+
+ .header_left p {
+    margin-bottom: 1.3rem;
+ }
+
+  /*------categories------*/
+
+
+  .categories_right {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .category {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .category_icon {
+    margin-top: 4px;
+    display: inline-block;
+  }
+
+  /*------popular courses------*/
+
+  .courses_container {
+    grid-template-columns: 1fr;
+  }
+
+  /*------testimonial------*/
+
+.testimonial_body {
+    padding: 1.2rem;
+}
+ /*------footer------*/
+ .footer_container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+ }
+
+ .footer_1 p {
+    margin: 1rem auto;
+ }
+
+ .footer_socials {
+    justify-content: center;
+ }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

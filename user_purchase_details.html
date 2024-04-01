@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Purchase Details</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="user_purchase_details.css">
+</head>
+<body>
+
+    <h2>User Purchase Ticket Details</h2>
+    <div class="container">
+        <div class="purchase-details-card">
+            <div id="purchaseDetails">
+                <!-- Purchase details will be dynamically populated here -->
+            </div>
+            <div id="eventFlyer">
+                <img id="eventFlyerImg" src="#" alt="Event Flyer">
+            </div>
+            <div id="qrCodeContainer" class="qr-code-container">
+                <!-- QR code image will be dynamically populated here -->
+            </div>
+            <div id="ticketsContainer">
+                <!-- Tickets will be dynamically populated here -->
+            </div>
+        </div>
+        <div class="payment-details">
+            <div id="paymentMethod">
+                <h3>Payment Method: <span id="paymentMethodText"></span></h3>
+            </div>
+            <div id="accountDetails">
+                <!-- Account details form or information can be added here -->
+                <h3>Account Details:</h3>
+        <p>Account Name: Duke-Duchess</p>
+        <p>Account Number: 0243777826 </p>
+        <p>Bank Name: Wema</p>
+            </div>
+            <div id="paymentOptions">
+                <div id="paypal-button-container"></div>
+                <div id="stripe-button-container"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+     <!----------footer section section-------------------------------------------------->
+    
+    
+     <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>Dukes%Dutches</h4>
+                </a>
+                <p></p>
+            </div>
+    
+            <div class="footer_2">
+                <h4>permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="https://we-dey-4u-4life-if7p-git-main-we-dey-4-u.vercel.app/">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="https://contact-email-nine.vercel.app/">Contact</a></li>
+                </ul>
+    
+            </div>
+    
+            <div class="footer_3">
+                <h4>privacy</h4>
+                <ul class="privacy">
+                    <li><a href="index.html">privacy policy</a></li>
+    
+                    <li><a href="about.html">terms and conditions</a></li>
+                    
+                </ul>
+    
+            </div>
+    
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <Span>08061648132</Span>
+                <p>Dukeduchessng1@gmail.com</p>
+                <ul class="footer_socials">
+    
+                    <a href="https://www.facebook.com/share/hgi5x3MKEztwx8hd/?mibextid=K35XfP"><i class="fab fa-facebook-f"></i></a>
+                    <a href="index.html"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/mazidukeduchess?igsh=MndnZjJja2tzNzI0&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                    <a href="index.html"><i class="fab fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <small>copyright: D%D</small>
+        </div>
+    </footer>
+
+
+
+
+    <a href="https://contact-email-nine.vercel.app/" class="email-container">
+        <button class="email-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                <path d="M22 5.13a1 1 0 0 1-1.8.74L12 12.25 3.8 5.87a1 1 0 0 1 1.4-1.4L12 9.45l7.8-5.98a1 1 0 0 1 1.4 1.4z"></path>
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
+        <div class="email-text-container">
+            <span class="email-text">Send us an Email</span>
+        </div>
+    </a>
+    
+    
+
+    <!-- PayPal SDK script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AUZfGvEgrryvFBhpS4ioMns0ECGCehJHJBEDEHNNcekDqM-IDNOqnit1g5oIrdCDqCcnGqSU-QDf-h_l"></script>
+
+    <!-- Your JavaScript code -->
+    <script src="js/user_purchase_details.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>

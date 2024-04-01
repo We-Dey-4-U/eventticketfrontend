@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="eventCreationForm.css">
+</head>
+<body>
+    <h2>Create Event</h2>
+    <form id="eventCreationForm">
+        <input type="text" id="eventName" placeholder="Event Name" required>
+        <input type="text" id="eventLocation" placeholder="Location" required>
+        <input type="datetime-local" id="eventDate" required>
+        <input type="number" id="regularPrice" placeholder="Regular Price" required> <!-- Regular price input field -->
+        <input type="number" id="vipPrice" placeholder="VIP Price" required> <!-- VIP price input field -->
+        <input type="number" id="normalPrice" placeholder="Normal Price" required> <!-- Normal price input field -->
+        <input type="file" id="eventFlyer" accept="image/*" required>
+        <button type="submit">Create Event</button>
+    </form>
+    <script src="js/eventCreationForm.js"></script>
+</body>
+</html>

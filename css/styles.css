@@ -1,0 +1,1054 @@
+/* Add your CSS styles here */
+* {
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: #03083e;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+.nav-left {
+    justify-self: start;
+}
+
+.nav-right {
+    justify-self: end;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search button[type="submit"] {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.search button[type="submit"]:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+#registrationMessage {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Default styles for event list */
+
+#eventList {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.eventItem {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.eventDetails strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.eventFlyer {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    max-height: 400px; /* Adjust the max-height for the flyer */
+}
+
+.purchaseTicketBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Align button to bottom */
+    align-self: center; /* Center button horizontally */
+}
+
+.purchaseTicketBtn:hover {
+    background-color: #0056b3;
+}
+
+.purchaseTicketBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Align button to bottom */
+    align-self: center; /* Center button horizontally */
+}
+
+.purchaseTicketBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .eventItem {
+        flex: 0 1 calc(100% - 20px);
+    }
+
+    .eventFlyer {
+        max-height: 300px; /* Adjust the max-height for the flyer on smaller screens */
+    }
+}
+
+/* Style for event flyer image */
+
+
+/* Hide the form by default */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#eventCreationForm {
+    display: none;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for event display */
+#eventCreationForm {
+    display: none;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+   
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    margin-top: -10px;
+    background-color: #0056b3;
+    
+}
+
+.slider-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-item.active {
+    display: block;
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    /* Add more styles as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------footer style styles]'------*/
+
+ 
+footer {
+    background: var(--color-bg1);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.footer_container > div h4 {
+    margin-bottom: 1.2rem;
+}
+
+.footer_2 p {
+    margin: 0 0 2rem;
+}
+
+footer ul li {
+    margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer_copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2ren 0;
+    border-top: 1px solid var(--color-bg2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* WhatsApp container */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* WhatsApp button */
+.whatsapp-button {
+    background-color: green; /* Customize button color */
+    color: white; /* Customize button text color */
+    border: none;
+    border-radius: 50%;
+    width: 60px; /* Adjust button width as needed */
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    z-index: 999; /* Ensure button stays on top of other elements */
+}
+
+.whatsapp-button:hover {
+    background-color: darkgreen; /* Change button color on hover */
+}
+
+/* WhatsApp text */
+.whatsapp-text {
+    margin-right: 10px; /* Adjust spacing between button and text as needed */
+    font-size: 16px;
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: white; /* Customize text color */
+
+}
+
+/* WhatsApp text container */
+.whatsapp-text-container {
+    background-color: green; /* Customize container background color */
+    border-radius: 100px; /* Adjust border radius as needed */
+    padding: 5px 10px; /* Adjust padding as needed */
+    height: 50px;
+}
+
+/* WhatsApp text */
+
+
+/* Media query for small screens */
+@media only screen and (max-width: 576px) {
+    .footer {
+        display: block; /* Change footer to block layout for better stacking */
+    }
+
+    .footer-column {
+        margin-bottom: 20px; /* Add space between footer columns */
+        text-align: center; /* Center-align footer columns */
+    }
+
+    .social-icons {
+        justify-content: center; /* Center-align social media icons */
+    }
+
+    .footer-bottom {
+        flex-direction: column; /* Stack card images vertically */
+        align-items: center; /* Center-align card images */
+    }
+
+    .delivery-image {
+        margin-bottom: 20px; /* Add space between card images */
+    }
+
+    .whatsapp-container {
+        flex-direction: column; /* Stack WhatsApp button and text vertically */
+        align-items: center; /* Center-align WhatsApp button and text */
+        margin-top: 20px; /* Add space above WhatsApp button */
+    }
+
+    .whatsapp-text-container {
+        margin-bottom: 10px; /* Add space between WhatsApp text and button */
+    }
+}
+
+
+
+/* Media query for small screens */
+@media only screen and (max-width: 576px) {
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .delivery-image {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Delivery service images */
+
+.delivery-image img {
+    max-width: 70%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent whitespace under images */
+    border-radius: 5px; /* Add border radius for a nicer look */
+    margin: 10px;
+    max-height: 100px;
+    width: auto;
+}
+
+/* Copyright */
+.copyright {
+    background-color: #333; /* Dark gray background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align the text */
+    padding: 10px; /* Add padding to the container */
+    margin-top: 20px; /* Add margin at the top */
+}
+
+.copyright p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+}
+
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .delivery-images {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .delivery-image img,
+    .delivery-image2 img {
+        max-width: 100%; /* Ensure images don't exceed container width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Add spacing between images */
+    }
+}
+
+
+
+
+
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .delivery-image img {
+        max-width: 40%; /* Reduce image width to 40% on small screens */
+    }
+
+    .delivery-image2 img {
+        max-width: 40%; /* Reduce image width to 40% on small screens */
+        max-height: 60px; /* Adjust maximum height accordingly */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.highway-car img {
+   max-width: 50%; /* Adjust as needed */
+}
+
+
+
+.tech-slideshow {
+    height: 200px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  section {
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	div.container {
+		transition:all .3s ease;
+		h1 { margin:15px 0 0 0; }
+		h3 { margin:0 0 25px 0; }
+	}
+	@media (max-width:992px) { padding:0 20px 0 20px; }
+}
+section.slide-option {
+	margin:0 0 50px 0;
+	.no-marg { margin:0 0 0 0; }
+}
+
+div.highway-slider {
+	display:flex;
+	justify-content:center;
+	width:100%;
+	height:100px;
+	div.highway-barrier {
+		overflow:hidden;
+		position:relative;
+	}
+	ul.highway-lane {
+		display:flex;
+		height:100%;
+		li.highway-car {
+			flex:1;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			background:#fff;
+			color:#343434;
+		}
+	}
+}
+
+@keyframes translatestf {
+	0% { transform:translateX(100%);  }
+	100% { transform:translateX(-500%);  }
+}
+#stffull div.highway-barrier {
+	ul.highway-lane {
+		width:500%;
+		li.highway-car {
+			animation:translatestf 30s linear infinite;
+			h4 { font-size:28px; }
+		}
+	}
+}
+
+@keyframes translateinfinite {
+	100% { transform:translateX(calc(-180px * 12));  }
+}
+#infinite div.highway-barrier {
+	background:#fff;
+	
+	&::before,
+	&::after {
+		content: " ";
+		position:absolute;
+		z-index:9;
+		width:180px;
+		height:100%;	
+	}
+	&::before {
+		top:0;left:0;
+		background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	}
+	&::after {
+		top:0;right:0;
+		background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	}
+	ul.highway-lane {
+		width:calc(180px * 24);
+		li.highway-car {
+			width:180px;
+			animation:translateinfinite 25s linear infinite;
+			span.fab {
+				font-size:65px;
+			}
+		}
+	}
+}
+
+
+
+/* Media query for small screens */
+@media only screen and (max-width: 576px) {
+    .hero img {
+        height: auto; /* Make the image responsive */
+        max-width: 100%; /* Ensure the image fits within its container */
+    }
+}
+
+
+ /* trying */
+  
+.brand-animation {
+    overflow: hidden;
+    .slider {
+      animation: slide 30s linear infinite;
+      white-space: nowrap;
+      .logos {
+        width: 100%;
+        display: inline-block;
+        margin: 0px 0;
+        .fab{
+            padding: 20px;
+      }
+
+    }
+  }
+}
+
+.text-center{
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    width: 250px;
+    margin-left: -55px;
+    padding: 10px 30px;
+    font-size: 25px;
+}
+
+
+
+
+/* articule section */
+
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 2px;
+    margin-top: 50px;
+  }
+  
+  .section h2 {
+    font-size: 15px;
+    color: #4caf50;
+  }
+  
+  .section p {
+    margin-top: 10px;
+  }
+  
+  .section p:last-child {
+    margin-bottom: 0;
+  }
+
+
+
+  .promo-section {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-text {
+    text-align: center;
+    margin-bottom: 20px; /* Increased margin between text and buttons */
+}
+
+.promo-text h2 {
+    margin-bottom: 20px;
+}
+
+.promo-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 40px; /* Increased padding for larger buttons */
+    background-color: #03083e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+.highway-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.highway-barrier {
+    display: flex;
+}
+
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

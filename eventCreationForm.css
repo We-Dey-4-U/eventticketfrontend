@@ -1,0 +1,42 @@
+/* Apply custom styles to the form */
+#eventCreationForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style form inputs */
+  #eventCreationForm input[type="text"],
+  #eventCreationForm input[type="datetime-local"],
+  #eventCreationForm input[type="file"],
+  #eventCreationForm input[type="number"],
+  #eventCreationForm button[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Style submit button */
+  #eventCreationForm button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Style submit button on hover */
+  #eventCreationForm button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style form heading */
+  #eventCreationForm h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }

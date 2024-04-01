@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Purchase Form</title>
+    <link rel="stylesheet" href="ticketPurchaseForm.css">
+</head>
+<body>
+    <h2> Purchase Your Ticket</h2>
+    <p> fill out the form with your correct <br> registered email</p>
+    <form id="ticketPurchaseForm">
+        <input type="hidden" id="eventId" value="">
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <select id="ticketType" required>
+            <option value="">Select Ticket Type</option>
+            <option value="vip">VIP</option>
+            <option value="regular">Regular</option>
+            <option value="normal">Normal</option>
+        </select>
+        <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+        <button type="submit">Purchase Tickets</button>
+    </form>
+    <script src="js/ticketPurchaseForm.js"></script>
+</body>
+</html>

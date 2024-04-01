@@ -1,0 +1,59 @@
+/* Apply custom styles to the form */
+#ticketPurchaseForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style form inputs */
+  #ticketPurchaseForm input[type="text"],
+  #ticketPurchaseForm input[type="email"],
+  #ticketPurchaseForm input[type="number"],
+  #ticketPurchaseForm button[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Style submit button */
+  #ticketPurchaseForm button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Style submit button on hover */
+  #ticketPurchaseForm button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style form heading */
+  #ticketPurchaseForm h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+  /* Style the ticket type dropdown */
+#ticketType {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white; /* Ensure white background */
+}
+
+/* Style the VIP option */
+#ticketType option[value="vip"] {
+    background-color: #ffd700; /* Yellow background for VIP */
+    color: black; /* Black text for better readability */
+}

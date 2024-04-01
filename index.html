@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Display</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eventCreationForm.html">eventCreationForm</a></li>
+            </ul>
+        </div>
+        
+      
+        
+        <div class="nav-right">
+            <ul>
+                <li><a href="users.html">Login</a></li>
+            </ul>
+        </div>
+    </nav> 
+
+
+    <h1>Events</h1>
+    <div id="eventList"></div>
+
+    <!-- Event Creation Form -->
+
+
+
+
+    <!----------footer section section-------------------------------------------------->
+    
+    
+  <footer class="footer">
+    <div class="container footer_container">
+        <div class="footer_1">
+            <a href="index.html" class="footer_logo">
+                <h4>Dukes%Dutches</h4>
+            </a>
+            <p></p>
+        </div>
+
+        <div class="footer_2">
+            <h4>permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer_3">
+            <h4>privacy</h4>
+            <ul class="privacy">
+                <li><a href="index.html">privacy policy</a></li>
+
+                <li><a href="about.html">terms and conditions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer_4">
+            <h4>Contact Us</h4>
+            <Span>08061648132</Span>
+            <p>Dukeduchessng1@gmail.com</p>
+            <ul class="footer_socials">
+
+                <a href="index.html"><i class="fab fa-facebook-f"></i></a>
+                <a href="index.html"><i class="fab fa-twitter"></i></a>
+                <a href="index.html"><i class="fab fa-instagram"></i></a>
+                <a href="index.html"><i class="fab fa-youtube"></i></a>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_copyright">
+        <small>copyright: Dukes%Dutches</small>
+    </div>
+</footer>
+
+
+ <!-- WhatsApp Button -->
+ <div class="whatsapp-container">
+    <div class="whatsapp-text-container">
+        <span class="whatsapp-text">How can I help you?</span>
+    </div>
+    <button class="whatsapp-button"><i class="fab fa-whatsapp"></i></button>
+</div>
+
+
+
+
+
+
+
+    
+
+   
+</div>
+
+<!-- Font Awesome CDN for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+
+<!--------end--footer section section-------------------------------------------------->
+
+
+
+
+<!----------change navbar style onscroll--with javascript------------------------------------------------->
+<script>
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle
+            ('window-scroll', window.scrollY > 0)
+    })
+</script>
+
+
+
+
+
+<!----------Show/hide nav meu-------->
+<script>
+    const menu = document.querySelector(".nav-menu");
+    const menuBtn = document.querySelector("#open-menu-btn");
+    const closeBtn = document.querySelector("#close-menu-btn");
+
+    menuBtn.addEventListener('click', () => {
+        menu.style.display = "flex";
+        closeBtn.style.display = "inline-block";
+        menuBtn.style.display = "none"
+    })
+
+    //--close nav menu
+
+    const closeNav = () => {
+        menu.style.display = "none";
+        closeBtn.style.display = "none";
+        menuBtn.style.display = "inline-block"
+    }
+
+    closeBtn.addEventListener('click', closeNav)
+
+
+
+
+
+
+</script>
+
+
+
+
+
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
