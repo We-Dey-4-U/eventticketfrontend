@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const eventCreationForm = document.getElementById('eventCreationForm');
+    console.log(eventCreationForm);
 
     eventCreationForm.addEventListener('submit', async function (e) {
         e.preventDefault(); // Prevent default form submission

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const formData = new FormData(registrationForm);
         const userData = Object.fromEntries(formData.entries());
 
-        fetch('http://localhost:3000/api/register', {
+        fetch('https://ticket-backend-1-09ex.onrender.com/api/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
